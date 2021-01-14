@@ -1,0 +1,94 @@
+html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+.wrapper {
+    min-height: 100vh;
+}
+
+header {
+    min-height: 15%;
+    background-color: blue;
+    color: white;
+    border-top: 1px solid blue;
+
+    display: table;
+    width: 100%; 
+}
+
+header h1 {
+    display: table-cell;
+    vertical-align: middle;
+   
+    text-align: center;
+  
+}
+
+.container {
+    min-height: 70%;   
+}
+
+.container * {
+    padding: 5px 10px;
+}
+
+nav {
+    background-color: orange;
+    float: left;
+    width: 20%;
+    height: 70%;
+    
+}
+
+main {
+    float: left;
+    width: 60%;
+    height: 70%;
+}
+
+aside {
+    background-color: purple;
+    float: left;
+    width: 20%;
+    height: 70%;
+}
+
+footer {
+    display: table;
+    min-height: 15%;
+    background-color: green;
+    color: white;
+    clear: both;
+    width: 100%;
+}
+
+footer h1 {
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+
+@media (max-width: 750px) {
+    nav, main, aside {
+        float: none;
+        width: 100%;
+    }
+
+    header, footer {
+        height: 15%;
+        
+    }
+
+    nav, aside {
+        height: 7.5%;
+        
+    }
+    
+    main {
+        height: 55%;
+        
+    }
+}

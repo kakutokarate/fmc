@@ -1,0 +1,225 @@
+html, * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    min-height: 100vh;
+    
+}
+
+.wrapper {
+    height: 100%;
+    max-width: 2560px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+}
+
+
+.header {
+    flex-grow: 1;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 90%);
+    color: white;
+   
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+   
+}
+
+.header-1 {
+    font-size: 5rem;
+}
+
+.header-2 {
+    font-size: 2rem;
+}
+
+.header-2 a {
+    color: lightskyblue;
+}
+
+.container {
+    margin-top: auto;
+    flex-grow: 3;
+   
+    display: flex;
+    justify-content: space-between;
+}
+
+.img {
+    flex-grow: 1;
+    display: flex;
+    
+    justify-content: center;
+
+    background-repeat: no-repeat;
+    background-position: center;
+     background-size: cover;
+
+    object-fit: fill;
+    
+}
+
+
+.img-1 {
+    max-width: 100%;
+    background-image: url(https://www.sonaija.com/wp-content/uploads/2019/10/Cats-Wallpaper-125.jpg);
+    margin-right: 2rem;
+  
+}
+
+.img-2 {
+    max-width: 100%;
+    background-image: url(https://i.pinimg.com/originals/f6/0c/b0/f60cb0d70348c7a4adfc971a25016333.jpg);
+    margin-right: 2rem;
+}
+
+.img-3 {
+    max-width: 100%;
+    background-image: url(https://i.pinimg.com/originals/0d/71/d7/0d71d731bb8b8f54436a1e8c886777b8.jpg);
+}
+
+.img-wr {
+    width: 100%;
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 85%);
+    color: white;
+  
+    padding: 1.5rem;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.img-text-1, .img-text-2 {
+    font-size: 2rem;
+}
+
+/* Medium devices (desktops, 992px and up) */
+
+@media screen and (max-width: 1200px) {
+    .header {
+        margin-bottom: 1.4rem;  /* 2rem default */    
+        padding: 1.1rem;        /* 1.5rem default */
+        
+    }
+    
+    .header-1 {
+        font-size: 4rem;        /*  5rem def */
+    }
+    
+    .header-2 {
+        font-size: 1.8rem;        /*  2rem def */
+    }
+
+    .img-wr {
+        padding: 1.1rem;           /* 1.5rem def */
+    }
+
+    .img-1, .img-2 {
+        margin-right: 1.4rem;        /* 2 rem def */
+    }
+
+    .img-text-1, .img-text-2 {
+        font-size: 1.7rem;            /*  2rem def */
+    }
+}
+
+/* Small devices (tablets, 768px and up) (2 images) */
+
+@media screen and (max-width: 992px) {
+    .header {
+        margin-bottom: 1.4rem;  /* 2rem default */    
+        padding: 1.1rem;        /* 1.5rem default */
+        
+    }
+    
+    .header-1 {
+        font-size: 4rem;        /*  5rem def */
+    }
+    
+    .header-2 {
+        font-size: 1.8rem;        /*  2rem def */
+    }
+
+    .img-wr {
+        padding: 1.1rem;           /* 1.5rem def */
+    }
+
+    .img-1 {
+        margin-right: 1.4rem;        /* 2 rem def */
+    }
+
+    .img-text-1, .img-text-2 {
+        font-size: 1.1rem;            /*  2rem def */
+    }
+    /* ----------------------------------------------- */ 
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 1.4rem 1.4rem;
+        
+    }
+
+    .img-1,.img-2 {
+        margin-right: 0;
+        
+    }
+}
+
+
+/* Extra small devices (phones, less than 768px) (1 image) */
+
+@media screen and (max-width: 768px) {
+    .header {
+        margin-bottom: 1rem;  /* 2rem default */    
+        padding: 0.9rem;        /* 1.5rem default */
+        
+    }
+    
+    .header-1 {
+        font-size: 2.4rem;        /*  5rem def */
+    }
+    
+    .header-2 {
+        font-size: 0.9rem;        /*  2rem def */
+    }
+
+    .img-wr {
+        height: 30%;
+        padding: 0.9rem;           /* 1.5rem def */
+    }
+
+ 
+
+    .img-text-1, .img-text-2 {
+        font-size: 1rem;            /*  2rem def */
+    }
+    /* ----------------------------------------------- */ 
+
+    .container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+      
+        gap: 1rem 1rem;
+
+    }
+
+    .img-1,.img-2 {
+        margin-right: 0;
+        
+    }
+}
