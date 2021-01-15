@@ -21,7 +21,7 @@ body {
 
 
 .header {
-    flex-grow: 1;
+   
   
     display: flex;
     flex-direction: column;
@@ -29,17 +29,18 @@ body {
     background-color: rgba(0, 0, 0, 90%);
     color: white;
    
-    margin-bottom: 2rem;
+    margin-bottom: 20px;
     padding: 1.5rem;
+    height: 270px;
    
 }
 
 .header-1 {
-    font-size: 5rem;
+    font-size: 56px;
 }
 
 .header-2 {
-    font-size: 2rem;
+    font-size: 24px;
 }
 
 .header-2 a {
@@ -48,7 +49,7 @@ body {
 
 .container {
     margin-top: auto;
-    flex-grow: 3;
+    
    
     display: flex;
     justify-content: space-between;
@@ -63,7 +64,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
      background-size: cover;
-
+    height: 810px;
     object-fit: fill;
     
 }
@@ -72,14 +73,14 @@ body {
 .img-1 {
     max-width: 100%;
     background-image: url(https://www.sonaija.com/wp-content/uploads/2019/10/Cats-Wallpaper-125.jpg);
-    margin-right: 2rem;
+    margin-right: 20px;
   
 }
 
 .img-2 {
     max-width: 100%;
     background-image: url(https://i.pinimg.com/originals/f6/0c/b0/f60cb0d70348c7a4adfc971a25016333.jpg);
-    margin-right: 2rem;
+    margin-right: 20px;
 }
 
 .img-3 {
@@ -102,24 +103,31 @@ body {
 }
 
 .img-text-1, .img-text-2 {
-    font-size: 2rem;
+    font-size: 28px;
 }
 
 /* Medium devices (desktops, 992px and up) */
 
 @media screen and (max-width: 1200px) {
+    * {
+        margin: 0;
+        padding: 0;
+        
+    }
+
     .header {
-        margin-bottom: 1.4rem;  /* 2rem default */    
+       /*  margin-bottom: 10px; */  /* 2rem default */    
         padding: 1.1rem;        /* 1.5rem default */
+    
         
     }
     
     .header-1 {
-        font-size: 4rem;        /*  5rem def */
+        font-size: 44px;        /*  5rem def */
     }
     
     .header-2 {
-        font-size: 1.8rem;        /*  2rem def */
+        font-size: 24px;        /*  2rem def */
     }
 
     .img-wr {
@@ -127,29 +135,62 @@ body {
     }
 
     .img-1, .img-2 {
-        margin-right: 1.4rem;        /* 2 rem def */
+        margin-right: 10px;        /* 2 rem def */
     }
 
     .img-text-1, .img-text-2 {
-        font-size: 1.7rem;            /*  2rem def */
+        font-size: 20px;            /*  2rem def */
     }
+
+    .header {
+        max-height: 169px;
+    }
+
+    .img {
+        height: 506px;
+    }
+
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        margin: auto 0;
+        align-items: center;
+        
+        max-height: 506px;
+        
+    }
+    
+   
+
 }
 
 /* Small devices (tablets, 768px and up) (2 images) */
 
 @media screen and (max-width: 992px) {
+    html, body, * {
+        margin: 0;
+        padding: 0;
+    }
+
     .header {
-        margin-bottom: 1.4rem;  /* 2rem default */    
+          /* 2rem default */    
         padding: 1.1rem;        /* 1.5rem default */
-        
+        height: 140px;
+    }
+
+    .img {
+        height: 420px;
     }
     
     .header-1 {
-        font-size: 4rem;        /*  5rem def */
+        font-size: 44px;        /*  5rem def */
     }
     
     .header-2 {
-        font-size: 1.8rem;        /*  2rem def */
+        font-size: 24px;        /*  2rem def */
     }
 
     .img-wr {
@@ -157,19 +198,21 @@ body {
     }
 
     .img-1 {
-        margin-right: 1.4rem;        /* 2 rem def */
+               /* 2 rem def */
     }
 
     .img-text-1, .img-text-2 {
-        font-size: 1.1rem;            /*  2rem def */
+        font-size: 24px;            /*  2rem def */
     }
     /* ----------------------------------------------- */ 
 
     .container {
+        margin: 0;
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        gap: 1.4rem 1.4rem;
+        gap: 10px 10px;
+        
         
     }
 
@@ -184,17 +227,25 @@ body {
 
 @media screen and (max-width: 768px) {
     .header {
-        margin-bottom: 1rem;  /* 2rem default */    
+          /* 2rem default */    
         padding: 0.9rem;        /* 1.5rem default */
+        height: 256px;
         
     }
     
+    .img {
+        height: 266px;
+        width: 455px;
+      
+       
+    }
+
     .header-1 {
-        font-size: 2.4rem;        /*  5rem def */
+        font-size: 40px;        /*  5rem def */
     }
     
     .header-2 {
-        font-size: 0.9rem;        /*  2rem def */
+        font-size: 26px;        /*  2rem def */
     }
 
     .img-wr {
@@ -205,7 +256,7 @@ body {
  
 
     .img-text-1, .img-text-2 {
-        font-size: 1rem;            /*  2rem def */
+        font-size: 20px;            /*  2rem def */
     }
     /* ----------------------------------------------- */ 
 
@@ -213,9 +264,14 @@ body {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr;
-      
-        gap: 1rem 1rem;
+        margin: 0;
+        gap: 10px 0;
+        
 
+    }
+
+    .img {
+        justify-self: center;
     }
 
     .img-1,.img-2 {
