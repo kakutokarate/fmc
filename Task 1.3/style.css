@@ -165,12 +165,14 @@ body {
     z-index: 1;
     font-size: 5vh;
     color: whitesmoke;
+    
    
     
 }
 
 .arrows label {
     display: none;
+    cursor: pointer;
 }
 
 .arrows label:hover {
