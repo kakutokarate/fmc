@@ -65,7 +65,9 @@ body {
     background-position: center;
      background-size: cover;
     height: 810px;
-    object-fit: fill;
+    object-fit: cover;
+ 
+    
     
 }
 
