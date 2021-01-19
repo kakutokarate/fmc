@@ -434,7 +434,7 @@ body {
 
 @media (max-width: 1200px) and (min-width: 992px) {
     body {
-       font-size: 0.8rem;
+       font-size: 0.9rem;
     }
 
     .products-low-list__item {
@@ -548,6 +548,11 @@ body {
     .products-high__footer {
         margin-top: 15px;
     }
+
+    .products__discount p {
+        font-size: 0.8rem;
+    }
+
 }
 
 
