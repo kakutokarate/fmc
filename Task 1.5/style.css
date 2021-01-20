@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+}
+
+input {
+    display: none;
+}
+
+.todo-list {
+   
+    border: 1px solid rgb(219,219,219);
+    margin: 20px auto 0 ;
+    width: 242px;
+    height: 266px;
+    
+    border-radius: 6px;
+    box-shadow: 0px 0px 1px rgb(219,219,219);
+
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr;
+
+}
+
+.todo-list__header {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding-left: 20px;
+
+    font-size: 0.6rem;
+   
+    color: rgb(105,109,121);
+
+    /* background-color: rgb(228,228,228); */
+    background: linear-gradient(180deg, rgb(250,250,250), rgb(228,228,228));
+    
+}
+
+
+
+.todo-list__checkboxes {
+    display: grid;
+    align-items: center;
+    padding-left: 20px;
+}
+
+.todo-list__checkboxes div {
+   align-items: center;
+   display: flex;
+}
+
+.todo-list__img {
+    display: grid;
+    align-items: center;
+}
+
+.todo-list__img-wrapper {
+    
+    display: grid;
+    gap: 3px;
+}
+
+.todo-list__img-wrapper div {
+    width: 20px;
+    height: 4px;
+    background-color: rgb(148,154,162);
+    
+}
+
+.todo-list__label {
+    display: block;
+    border: 2px solid rgb(152,165,166);
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+  
+}
+
+.todo-list__text {
+    color: rgb(149,163,174);
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+/* IF CHECKED */
+
+#checkbox-1:checked ~ .todo-list .todo-list__checkboxes div .p1 {
+    color: rgb(75,192,123);
+    text-decoration: line-through;
+}
+
+#checkbox-2:checked ~ .todo-list .todo-list__checkboxes div .p2 {
+    color: rgb(75,192,123);
+    text-decoration: line-through;
+
+}
+
+#checkbox-3:checked ~ .todo-list .todo-list__checkboxes div .p3 {
+    color: rgb(75,192,123);
+    text-decoration: line-through;
+
+}
+
+#checkbox-4:checked ~ .todo-list .todo-list__checkboxes div .p4 {
+    color: rgb(75,192,123);
+    text-decoration: line-through;
+
+}
+
+/* If checked then a label border */
+
+#checkbox-1:checked ~ .todo-list .todo-list__checkboxes div .l1,
+#checkbox-2:checked ~ .todo-list .todo-list__checkboxes div .l2,
+#checkbox-3:checked ~ .todo-list .todo-list__checkboxes div .l3,
+#checkbox-4:checked ~ .todo-list .todo-list__checkboxes div .l4 {
+    border: 2px solid rgb(75,192,123);
+}
+
+/* Checked marks */
+
+.todo-list__checkboxes div {
+    position: relative;
+}
+
+#checkbox-1:checked ~ .todo-list .todo-list__checkboxes div .l1::before,
+#checkbox-2:checked ~ .todo-list .todo-list__checkboxes div .l2::before,
+#checkbox-3:checked ~ .todo-list .todo-list__checkboxes div .l3::before,
+#checkbox-4:checked ~ .todo-list .todo-list__checkboxes div .l4::before {
+    content: "";
+    position: absolute;
+    border-color: rgb(75,192,123);
+    border-style: solid;
+    border-width: 0 4px 4px 0;
+    top: 5px;
+    left: 10px;
+    transform: rotate(45deg);
+    height: 13px;
+    width: 5px;
+}
+
+
+
+
+
