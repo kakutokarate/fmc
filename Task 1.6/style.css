@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+}
+
+.button {
+  display: block;
+  margin: 0 auto;
+  width: 270px;
+  height: 84px;
+  border: 1px solid #6e6e6e;
+  -webkit-box-shadow: 0 0 2px black;
+          box-shadow: 0 0 2px black;
+  border-radius: 20px;
+  padding: 2px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.button:hover {
+  -webkit-transform: scale(1.01);
+          transform: scale(1.01);
+}
+
+.btn-ext {
+  background-color: #cacaca;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.btn-int {
+  width: 250px;
+  height: 60px;
+  border-radius: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#e2e2e2), to(#afafaf));
+  background: linear-gradient(#e2e2e2, #afafaf);
+  border: 1px solid #6e6e6e;
+  -webkit-box-shadow: 0 0 1px black;
+          box-shadow: 0 0 1px black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px;
+}
+
+.btn-int .name {
+  color: #555555;
+  font-size: 24px;
+  font-weight: 600;
+  text-shadow: 0 0 10px white;
+}
+
+.star {
+  position: relative;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: .9em;
+  margin-right: .9em;
+  margin-bottom: 1.2em;
+  border-right: .3em solid transparent;
+  border-bottom: 0.7em solid #888888;
+  border-left: .3em solid transparent;
+  /* Controlls the size of the stars. */
+  font-size: 12px;
+}
+
+.star:before, .star:after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 0;
+  position: absolute;
+  top: .6em;
+  left: -1em;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid #888888;
+  border-left: 1em solid transparent;
+  -webkit-transform: rotate(-35deg);
+          transform: rotate(-35deg);
+}
+
+.star:after {
+  -webkit-transform: rotate(35deg);
+          transform: rotate(35deg);
+}
+/*# sourceMappingURL=style.css.map */
