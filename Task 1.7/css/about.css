@@ -1,0 +1,51 @@
+/* ABOUT */
+
+.cards {
+    font-family: 'Bodoni Moda', serif;
+    padding-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+  .cards h2 {
+      align-self: flex-start;
+      font-size: 20px;
+   
+  }
+
+  .cards h2 span {
+    align-self: flex-start;
+    font-size: 20px;
+    font-weight: 400;
+    padding-left: 10px;
+}
+
+  iframe {
+      align-self: flex-start;
+  }
+
+ 
+
+  @media (max-width: 992px) {
+        .cards, .aside {
+            padding: 0 50px;
+            width: 100%;
+          
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .cards {
+            flex-grow: 1;
+        }
+
+        iframe {        
+        align-self: center;    
+    }
+  }
