@@ -21,7 +21,10 @@ body {
       grid-template-rows: 150px 1fr 75px;
   min-height: 100vh;
   gap: 10px;
-  max-width: 1440px;
+}
+
+.wp {
+  height: 100%;
 }
 
 a {
